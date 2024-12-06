@@ -1,0 +1,70 @@
+.title-cards {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.title-cards h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.card-list {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+.card-list::-webkit-scrollbar {
+    display: none;
+}
+
+.card-list {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 220px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin: 0;
+    font-size: 0.9rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 4px;
+    max-width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+.error-message {
+    color: #ff4d4d;
+    font-size: 1rem;
+    margin-top: 10px;
+    text-align: center;
+}
